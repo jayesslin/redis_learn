@@ -44,7 +44,8 @@
 				end		
 	- 代码实例
 	> java中redislock 继承Lock
-		- 非阻塞式加锁，使用setNX命令返回ok的枷锁成功，并产生随机值
+		
+	- 非阻塞式加锁，使用setNX命令返回ok的枷锁成功，并产生随机值
 		
 		
 				private static final String KEY = "KEY";
@@ -52,7 +53,7 @@
 				private ThreadLocal<String> local =new ThreadLocal<String>();
 				
 			
-			//加锁
+		- 加锁
 				
 					public boolean tryLock(){
 					    	//产生随机值
@@ -72,7 +73,7 @@
 					 }
 					 
 					 
-			// 解锁（读取lua脚本）
+		- 解锁（读取lua脚本）
 			
 					public  boolean unlock(){
 						//读取lua脚本
