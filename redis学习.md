@@ -49,6 +49,8 @@
 				private static final String KEY = "KEY";
 				//通过theadlocal传值 
 				private ThreadLocal<String> local =new ThreadLocal<String>();
+				
+				
 			- 加锁
 				
 					public boolean tryLock(){
@@ -67,6 +69,8 @@
 					    		return false;
 					    	}
 					 }
+					 
+					 
 			- 解锁（读取lua脚本）
 			
 					public  boolean unlock(){
