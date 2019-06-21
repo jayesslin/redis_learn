@@ -44,7 +44,6 @@
 				end		
 	- 代码实例
 	> java中redislock 继承Lock
-		
 		- 非阻塞式加锁，使用setNX命令返回ok的枷锁成功，并产生随机值
 		
 		
