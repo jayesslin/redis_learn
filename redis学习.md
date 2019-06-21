@@ -1,7 +1,7 @@
 #Redis高可用以及分布式锁
 **redis 是 单进程单线程模型 ，保证了原子性**
 
-==
+
 *锁*
 
 - 分布式锁
@@ -52,8 +52,8 @@
 				//通过theadlocal传值 
 				private ThreadLocal<String> local =new ThreadLocal<String>();
 				
-			--
-			- 加锁
+			
+			//加锁
 				
 					public boolean tryLock(){
 					    	//产生随机值
@@ -72,8 +72,8 @@
 					    	}
 					 }
 					 
-			--		 
-			- 解锁（读取lua脚本）
+					 
+			// 解锁（读取lua脚本）
 			
 					public  boolean unlock(){
 						//读取lua脚本
